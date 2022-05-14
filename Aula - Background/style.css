@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: "Source Code Pro", monospace;
+    height: 100%;
+}
+
+.bg{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+
+    /*Backgrounds*/
+
+    background-color: red;
+    background-image: url('image/danki_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}

@@ -1,6 +1,10 @@
 body{
     background-color: antiquewhite;
+<<<<<<< HEAD
     height: auto;
+=======
+
+>>>>>>> 0938e67ec99e99b7666654e5895378effe6134c8
 }
 
 .container{
@@ -12,9 +16,17 @@ body{
     Justify-content: center;
     row-gap: 10px;
     column-gap: 30px;
+<<<<<<< HEAD
     height: 900px;
 }
 .container > div{
+=======
+    
+
+}
+
+.container > div {
+>>>>>>> 0938e67ec99e99b7666654e5895378effe6134c8
     border-radius: 5px;
     text-align: center;
     height: 60px;
