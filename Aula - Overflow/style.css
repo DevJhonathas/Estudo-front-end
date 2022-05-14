@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+
+.box, .box-2{
+    width: 300px;
+    margin: 0 auto;
+    background-color: gray;
+    /*
+    overflow-x: auto;
+*/
+}
+
+.box p, .box-2 p{
+    width: 100%;
+}
+
+.box-2{
+    margin-top: 20px;
+    display: block;
+    background-color: rgba(255, 0, 0, 0.5);
+}

@@ -1,0 +1,69 @@
+body{
+    background-color: antiquewhite;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    Justify-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+    height: 900px;
+}
+.container > div{
+    border-radius: 5px;
+    text-align: center;
+    height: 60px;
+    width: 70px;
+}
+.div-1{
+    background-color: rgba(251, 105, 105, 0.5);
+}
+.div-2{
+    background-color: rgba(237, 240, 100, 0.5);
+}
+.div-3{
+    background-color: rgba(86, 78, 246, 0.5);
+}
+
+/* Flex-direction - Define se o container sera no eixo horizontal ou vertical
+Por padrão ele é no sentindo "Row" linha
+para reverter usar o row-reverser
+para usar ele como coluna usa o column
+para reverter a coluna usa o column-reverse */
+
+/* Justify-content - alinha os elementos no eixo principal
+Justify-content: flex-start  -- Agrupa os elementos no inicio da tela
+Justify-content: flex-end  -- Agrupa os elementos no final da tela 
+Justify-content: flex-center -- Agrupa os elementos no centro
+Justify-content: space-between -- Distribui os elemtentos, sendo um elemento no inicio, um no final e o resto no centro
+Justify-content: space-around -- Coloca um espaço entre os elemento e também por fora, tipo um padding
+*/
+
+/* align-items: alinha os itens na página penperdiculamente
+align-items: flex-start; -- ele alinha os elementos um pouco mais para cima 
+align-items: flex-end.  -- ele alinha os elemtnos no final da pagina
+align-items: center; -- ele alinha os elementos no centro da pagina
+align-items: stretch; -- ele cobre todo o site disponivel 
+align-items: baseline; -- alinha todos os elementos com base dos elementos dessa tag pela font
+*/
+
+/* flex-wrap: 
+flex-wrap: nowrap; -- Tenta caber tudo em uma unica linha
+flex-wrap: wrap; -- permite usar mais de uma linha caso não tenha espaço
+flex-wrap: wrap-reverse; -- Inves dele quebrar para baixo, ele quebra para cima -- consegue declarar junto com o flex-direction usando o flex-flow: column/row/etc... wrap;
+*/
+
+/*align-content: alinha as linhas além de perpendicular
+mesmas propriedades de align-items, mas modificando outras direçoes
+*/
+
+/* gap, row-gap e column-gap - coloca 20px no vertical e horizontal
+gap = vertical, gap: 10px;
+gap = entre linhas x colunas: gap: 10px 20px;
+row-gap: distancias das linhas; row-gap: 10px;
+column-gap: 30px, distancias das colunas */

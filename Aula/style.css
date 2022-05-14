@@ -1,0 +1,35 @@
+html, body{
+    height: 100%;
+}
+
+.box{
+    width: 40%;
+    height: 300px; /* usado para altura*/
+    background: gray;
+}
+
+.box p{
+    color: initial;
+    background: initial;
+}/* valor inicial do elemento, reseta para o padrao*/
+
+.box > .box2 > span{
+    display: inline-block;
+    /*
+    width: inherit;
+    height: inherit;
+    background: red;
+    */
+} /* inherit está pegando o que eu pedi no box superior e
+replicando no de baixo ".box span", entretanto posso colocar outros
+valores como coloquei em "background" */
+ 
+
+
+/* 
+@media screen and(max-width: 400px){
+    .box{
+        height: auto;
+    }
+}Estamos definindo quando será aplicado a propriedade auto 
+para que fique responsivo o site para androids*/ 

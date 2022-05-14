@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+a[href~="google"]{
+    background-color: red;
+}
+/* seleciona todas as palavras que estõa no link
+usando o href*=  
+seleciona todas as palavras que estõa no link
+usando o attr~= em especifico
