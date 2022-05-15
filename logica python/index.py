@@ -12,34 +12,65 @@
 
 
 
-print('\n Ola, vamos fazer um teste de covid?\nToma essa vacina po!\n')
-recomendacao = '''Vamos tomar cuidado ao sair no caralho da rua, tem um trem la que mata sua familia toda!'''
-recomendacaoGravida = '''Evite sair de casa e use mascara, cuidado com algumas vacinas ai'''
+from fileinput import close
+from traceback import print_tb
+
+
+print('\n Ola, vamos fazer um teste de covid?\n Vamos tomar essa vacina po!\n')
+recomendacao = '''Vamos tomar cuidado ao sair na rua, tem um trem la que mata sua familia toda!'''  #Variavel para recomendacoes gerais
+recomendacaoGravida = '''Evite sair de casa e use mascara, cuidado com algumas vacinas ai''' #Variavel para recomendacao para gravidas
         
 
-
-sexo = input("Você é homem ou mulher?\nDigite H para homem ou M para mulher\n\n")
+#INFORMACOES SOBRE A SEXUALIDADE DA PESSOA
+sexo = input("Primeiramente você é homem ou mulher?\nDigite H para homem ou M para mulher\n\n")
 if sexo.upper() == 'M':
-    gravidez = input('Voce esta gravida? Sim(S) / Nao(N)\n\n')
-if gravidez.upper() == 'S':
-    print(recomendacaoGravida)
-elif gravidez.upper() == 'N':
-    print(recomendacao)
+    gravidez = input('Voce esta gravida? Sim(S) / Nao(N)\n\n')  # Analisando se a mulher esta gravida ou nao
+    if gravidez.upper() == 'S':
+        print(recomendacaoGravida) # Informacao gravida
+        print('Anotando dados\n 30%...')
+    elif gravidez.upper() == 'N':
+        print(recomendacao)
+        print('Anotando dados\n 30%...') # Informacao nao gravida
+elif sexo.upper() == 'H':
+    print('Anotando dados\n 30%...')  # Informacao homem
 else:
     print('Letra incorreta!')
-    
+
+#INFORMACOES SOBRE IDADES E DOENCAS
 idade = input("Digite sua idade por gentileza\n\n")    
-if idade < str('18') or idade > str('18') and idade < str('60'):
+if idade > str('18') or idade < str('60'):
+    print(recomendacao)  # Informacao para pessoas que nao prioridade
+    print('Anotando dados\n 50%...') 
+    identificacaoDoenca = input("Você possui alguma doença pré-existente, tipo asma, diabetes, hipertensão, ou câncer?\n Sim ou não?\n\n")
+    if identificacaoDoenca.upper() == 'S':
+        print('Va ao medico')  # Informacao para pessoas com doencas
+    elif identificacaoDoenca.upper() == 'N':
+        print(recomendacao)  # Informacao para pessoas que nao tenham doencas
+    else:
+        print('Letra incorreta!')
+elif idade < str('18'):
+    print('Tome cuidado para n ser infectado e matar sua familia')
     print(recomendacao)
+    identificacaoDoenca = input("Você possui alguma doença pré-existente, tipo asma, diabetes, hipertensão, ou câncer?\n Sim ou não?\n\n")
+    if identificacaoDoenca.upper() == 'S':
+        print('Va ao medico')# Informacao para pessoas com doencas
+        print('\nConsulta Finalizada\n dados: 100%...')
+    elif identificacaoDoenca.upper() == 'N':
+        print(recomendacao)# Informacao para pessoas que nao tenham doencas
+        print('\nConsulta Finalizada\n dados: 100%...')
+    else:
+        print('Comando errado')
 elif idade > str('60'):
     print('Tome cuidado ao sair de casa!\n')
     identificacaoDoenca = input("Você possui alguma doença pré-existente, tipo asma, diabetes, hipertensão, ou câncer?\n Sim ou não?\n\n")
     if identificacaoDoenca.upper() == 'S':
-        print('Va ao medico')
+        print('Va ao medico')# Informacao para pessoas com doencas
+        print('\nConsulta Finalizada\n dados: 100%...')
     elif identificacaoDoenca.upper() == 'N':
-        print(recomendacao)
+        print(recomendacao)# Informacao para pessoas que nao tenham doencas
+        print('\nConsulta Finalizada\n dados: 100%...')
     else:
         print('Comando errado')
-else:
-    print('Comando errado')
+else: 
+    print('\nConsulta Finalizada\n dados: 100%...') #FINALIZANDO PROGRAMA...
     
