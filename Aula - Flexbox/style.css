@@ -1,6 +1,8 @@
 body{
     background-color: antiquewhite;
 
+    height: auto;
+
 }
 
 .container{
@@ -12,9 +14,9 @@ body{
     Justify-content: center;
     row-gap: 10px;
     column-gap: 30px;
-    
-
+    height: 900px;
 }
+
 
 .container > div {
     border-radius: 5px;
