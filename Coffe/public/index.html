@@ -10,23 +10,69 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="#" class="logo">
-        <img src="../images/logo.png" alt="">
-    </a>
-    <header>
+ 
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="../images/logo.png" alt="">
+        </a>
+
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#home">about</a>
-            <a href="#home">menu</a>
-            <a href="#home">product</a>
-            <a href="#home">review</a>
-            <a href="#home">contacts</a>
-            <a href="#home">blogs</a>            
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#product">product</a>
+            <a href="#review">review</a>
+            <a href="#contacts">contacts</a>
+            <a href="#blogs">blogs</a>            
         </nav>
         <div class="icons">
             <div class="fa-solid fa-cart-shopping" id="compras-btn"></div>
             <div class="fas fa-search" id="pesquisa-btn"></div>
             <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Pesquise aqui...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="carte-items">
+                <span class="fas fa-times"></span>
+                <img src="../images/cart-item-1.png" alt="">
+                <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">R$15.99/-</div>
+                </div>
+            </div>
+            <div class="carte-items">
+                <span class="fas fa-times"></span>
+                <img src="../images/cart-item-2.png" alt="">
+                <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">R$15.99/-</div>
+                </div>
+            </div>
+            <div class="carte-items">
+                <span class="fas fa-times"></span>
+                <img src="../images/cart-item-3.png" alt="">
+                <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">R$15.99/-</div>
+                </div>
+            </div>
+            <div class="carte-items">
+                <span class="fas fa-times"></span>
+                <img src="../images/cart-item-4.png" alt="">
+                <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">R$15.99/-</div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn">Checkout</a>
+            </div>
         </div>
     </header>
 
