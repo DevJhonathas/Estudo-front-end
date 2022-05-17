@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@200&display=swap');
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+}
+
+.secao1{
+    display: grid;
+    justify-items: center;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20vh 10vh 650vh;
+    grid-template-areas:    
+    "header header"
+    "menu menu" 
+    "main main"
+    "footer footer";
+}
+header{
+    background: yellow;
+    grid-area: header;
+}
+main{
+    background: blue;
+    grid-area: main;
+}
+menu{
+    background: green;
+    grid-area: menu;
+}
+footer{
+    background: red;
+    grid-area: footer;
+}
