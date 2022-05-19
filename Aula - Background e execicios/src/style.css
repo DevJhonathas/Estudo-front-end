@@ -6,11 +6,46 @@
 html, body{
     height: 100%;
 }
-
+/*
 .bg{
     width: 100%;
-    height: 400px;
-    background-image:url(../image/sunset.jpg);
+    height: 30vw;
+    VH significa que Viwerport Height que
+    ele expande de acordo com o tamanho
+    da sua tela também há o vw Viwerport Width
+    background-attachment: scroll;
+    margin: 0 auto;
+    background-image:url('../image/sunset.jpg');
+    background-color: red;
     background-repeat: no-repeat;
-    background-position: center;
+   
+    background-size: auto;
+    background-position:center;
+    
+}*/
+
+.box{
+    width: 100%;
+    margin: 80px auto;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+}
+
+.item{
+    width: 33.333%;
+    margin-right: -4px;
+    display: inline-block ;
+}
+.item > img{
+    width: 16%;
+}
+
+.item > p{
+    background: purple;
+    display: inline-block;
+    text-align: left;
+}
+
+.last{
+    margin-right: 0;
 }

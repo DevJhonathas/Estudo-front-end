@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.teste1,.teste2,.teste3{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 300px;
+    background-color: #ccc;
+}
+
+.teste1{
+    background-color: rgb(98, 98, 98);
+}
+
+.teste2{
+    background-color: rgb(50, 50, 50);
+}
+/*
+.teste1:hover{
+    height: 900px;
+    background-color: red;
+}
+
+.teste1:hover, .teste2, .teste3{
+    vertical-align: top;
+}*/
+.teste3{
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+}
+p{
+    color: #ccc;
+
+}
+.teste3:hover{
+    color: pink;
+    font-size: large;
+    background-position: center;
+}
+
+.teste3:hover{
+    background-color: purple;
+    color: pink;
+}
