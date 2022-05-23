@@ -27,22 +27,29 @@ body{
     color: var(--background-color-dark);
     background-color: var(--background-color-white);
 
+
 }
 
 header{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
+    padding: 10px;
+    background: #7d7d7e;
 }
 
 p{
     text-align: left;
+    margin-top: 30px;
 }
 
 .links > a{
     text-decoration: none;
 }
 
+
+/* DARK MODE*/
 .checkbox{
     position: absolute;
     opacity: 0%;
@@ -89,3 +96,52 @@ p{
 .fa-sun{
     color: #f39c12;
 }
+
+
+/* TIMER */
+.secaoTimer{
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background: rgb(202, 201, 201);
+}
+
+h1{
+    font-size: 60px;
+}
+
+button{
+    height: 2.2em;
+    width: 6em;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.btn-start{
+    background-color: rgb(35, 143, 35);
+    border-radius: 10px;
+}
+
+.btn-stop{
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+.btn-pause{
+    background-color: rgb(105, 105, 105);
+    border-radius: 10px;
+}
+
+.btn-start:hover{
+    background-color: rgb(24, 122, 24);
+}
+
+.btn-stop:hover{
+    background-color: rgb(230, 76, 49);
+}
+
+.btn-pause:hover{
+    background-color: rgb(90, 90, 90);
+}
+
