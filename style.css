@@ -1,55 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@200&display=swap');
-
-:root{
-    --background-color-white: #f1f1f1;
-    --background-color-dark: #111;
-    
-    --color-font-white: #fff;
-    --color-font-dark:  rgb(14, 13, 13);
-}
-
-::-webkit-scrollbar{
-    width: 0;
-}
-
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
+}
 
-}
-body.dark{
-    background:#292c35;
-}
 body{
     background-color: #fafafa;
-    font-family: "Source Sans Pro", sans-serif;
-    color: var(--background-color-dark);
-    background-color: var(--background-color-white);
-
-}
-
-header{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
 }
 
-p{
-    text-align: left;
-}
-
-.links > a{
-    text-decoration: none;
+body.dark{
+    background:#292c35;
 }
 
 .checkbox{
+    color: red;
     position: absolute;
-    opacity: 0%;
+
+
 }
 
 .label{
-    background-color: var(--background-color-dark);
+    background-color: #111;
     border-radius: 50px;
     cursor: pointer;
 
@@ -61,8 +40,8 @@ p{
     position: relative;
     height: 26px;
     width: 50px;
-
-    transform: scale(1);
+    
+    transform: scale(1.5);
 }
 
 .label .ball{
@@ -82,6 +61,7 @@ p{
 .checkbox:checked + .label .ball{
     transform: translateX(24px);
 }
+
 .fa-moon{
     color: #f1c40f;
 }
