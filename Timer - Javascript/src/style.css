@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@200&display=swap');
+:root{
+    --color-white: #f1f1f1;
+    --back-dark-bg: #111;
+}
+
+*{
+font-family: "Source Sans Pro", sans-serif;
+}
+
+body{
+    background-color: var(--back-dark-bg);
+}
+
+h1{
+    color: var(--color-white);
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    height: 2.2em;
+    width: 6em;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    
+}
+.start-btn{
+    background-color:green;
+}
+
+
+.pause-btn{
+    background-color: grey;
+}
+
+
+.stop-btn{
+    background-color: orangered;
+}

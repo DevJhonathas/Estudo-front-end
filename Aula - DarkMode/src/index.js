@@ -1,5 +1,9 @@
-const chk = document.getElementById('chk')
+const alterarModo = document.getElementById('alterarModo')
 
-chk.addEventListener('change', ()=> {
+alterarModo.addEventListener('change', ()=> {
     document.body.classList.toggle('dark')
 })
+
+
+
+
