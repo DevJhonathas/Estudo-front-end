@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@700&family=Source+Code+Pro:wght@200&family=Source+Sans+Pro:wght@200&family=Tiro+Telugu:ital@1&display=swap');
+
+*{
+    padding: 0;margin: 0;
+    outline: 0;border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s linear;
+}
+
+html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.6rem;
+    height: 10vh;
+    width: 100vw;
+    background-color: aquamarine;
+}
+header .container .nav nav ul{
+    display: flex;
+    list-style: none;
+    gap: 5vh;
+}
+header .container .nav nav ul li:hover{
+    background-color: black;
+}
