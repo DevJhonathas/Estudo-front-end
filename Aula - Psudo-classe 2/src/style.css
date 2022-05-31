@@ -6,7 +6,25 @@
 html, body{
     height: 100%;
 }
+.box > div{
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
+    height: 400px;
+    background-color: red;
+    border: 1px solid black;
+}
+.box div:not(.two){
+    background-color: rgba(255, 255, 255, 1);
+}/*NEGACAO
+Not seria a negação de uma class. Por exemplo
+estamos negando a class two e com isso os efeitos estão somente nas outras
+classes. 
+Ex: .box div:not(.two){
+    background-color: rgba(255, 255, 255, 1);
+}*/
 
+/*
 .box{
     width: 100%;
 }
@@ -20,12 +38,9 @@ html, body{
     border: 1px solid black;
 }
 
-.box > div:last-of-type{
-    background-color: blue;
+.box > div:last-of-type, .box > p:last-of-type{
+    background-color: green;
 }
-
-.box > p:last-of-type{
-    color: green;
-}
+*/
 
 /*PAREI EM 08:07 MIN*/

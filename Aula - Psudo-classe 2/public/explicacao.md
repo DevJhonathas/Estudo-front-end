@@ -14,3 +14,10 @@ ul li:nth-of-type(2){
  /*Ataca a ul e todos os elementos dela especificada */
 
    
+
+# Last-of-type
+### Pegamos o último elemento do mesmo tipo.
+``Ex:`` .box div:last-of-type, .box p:last-of-type{
+    background-color: green;
+}
+
