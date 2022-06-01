@@ -26,19 +26,23 @@ form legend{
 
 form input[type=text]{
     display: inline-block;
+    font-family: tahoma;
     margin-top: 30px;
     width: 80%;
     padding: 10px 13px;
+    border: 1px solid #ccc;
 }
-form input[type=text]:focus{
+form input[type=text]:focus, form select:focus, form textarea:focus{
     outline: 0;
 }
 
 form select{
+    font-family: tahoma;
     width:calc(80% + 26px);
     margin-top: 30px;
     padding: 10px 30px;
     display: inline-block;
+    border: 1px solid #ccc;
 }
 
 form h2{
@@ -46,14 +50,43 @@ form h2{
     color: rgb(100, 100, 100);
 }
 
-.radio-input{
+.input{
     display: inline-block;
     text-align: left;
     margin-top: 20px;
 }
 
-.radio-input span{
+.input span{
     margin-left: 13px;
     font-size: 16px;
     color: rgb(130, 130, 130);
+}
+.input [type=radio]{
+    cursor: pointer;
+}
+
+textarea{
+    border: 1px solid #ccc;
+    font-family: tahoma;
+    margin-top: 30px;
+    width: 80%; height: 140px;
+    padding: 10px 13px;
+    resize: none;
+}
+
+form input[type=submit]{
+    margin-top: 30px;
+    border: 0;
+    background-color: #d1d1d1;
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    border: 1px solid rgb(50, 50, 50);
+    cursor: pointer;
+}
+form input[type=submit]:focus{
+    background-color: #c7c4c4;
+}
+form input[type=submit]:hover{
+    background-color: #c7c4c4;
 }
