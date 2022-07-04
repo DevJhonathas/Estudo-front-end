@@ -1,35 +1,61 @@
-*{
-    padding: 0;margin: 0;
+* {
+    padding: 0;
+    margin: 0;
     border: none;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;/*precisa estar nowarp para a propriedade flex-shrink funcionar, mesmo vale para o item-self, caso contrário não irar funcionar*/
     gap: 10px 30px;
     height: 100vh;
-
     background-color: antiquewhite;
 }
 
-.box1{
+.container>.box1,
+.box2,
+.box3 {
+    height: 150px;
+    width: 150px;
+    border-radius: 15px;
+
+    font-size: 2.7vh;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.box1 {
     background-color: rgb(220, 86, 86);
-    padding: 25px; order: 1;
-    border-radius: 15px;
+    order: 0;
+    flex: 0 1 auto;/* Mesma coisa que flex-grow, shrink e basis.  */
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    align-self: flex-start;
 }
-.box2{
+
+.box2 {
     background-color: rgb(69, 203, 138);
-    padding: 25px; order: -1;
-    border-radius: 15px;
+    order: 0;
+    flex: 0 1 auto;/* Mesma coisa que flex-grow, shrink e basis.  */
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    align-self: flex-end;
 }
-.box3{
+
+.box3 {
     background-color: rgb(96, 92, 210);
-    padding: 25px; order: 0;
-    border-radius: 15px;
+    order: 0;
+    flex: 0 1 auto; /* Mesma coisa que flex-grow, shrink e basis.  */
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    align-self: flex-start;
 }
