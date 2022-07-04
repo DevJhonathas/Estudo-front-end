@@ -3,8 +3,7 @@
     margin: 0;
     border: none;
     box-sizing: border-box;
-}
-/* finalizado */
+}/*finaliza */
 
 .container {
     display: flex;
@@ -24,7 +23,7 @@
 .box3 {
     height: 150px;
     width: 150px;
-    border-radius: 15px;
+    border-radius: 75px;
 
     font-size: 2.7vh;
     font-family: 'Roboto', sans-serif;
