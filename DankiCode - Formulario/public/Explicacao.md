@@ -35,16 +35,33 @@ Ex:
 
 `HTML:`
 
-    <input type="checkbox" name="" id="check1">
-    <label for="check1"></label>
-    <input type="checkbox" name="" id="check2">
-    <label for="check2"></label>
+    <form>
+        <input type="checkbox" name="checkbox" id="check1">
+        <label for="check1"></label>
+        <input type="checkbox" id="check2">
+        <label for="check2"></label>
+    </form>
+
 
 `CSS:`
 
-    input[type-checkbox]:checked + label{
-    width: 30px;
-    height: 30px;
-    background-color: red;
+    form{
+    text-align: center;
+    background-color: #ccc;
+    padding: 30px 0;
+    }
+
+    input[type=checkbox]{
+        display: none;
+    }
+    label{
+        display: inline-block;
+        margin: 0 60px;
+        width: 30px;
+        height: 30px;
+        background-color: green;
+    }
+    input[type=checkbox]:checked + label{
+        background-color: red;
     }
 
