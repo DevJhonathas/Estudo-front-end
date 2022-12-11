@@ -122,7 +122,7 @@ Unidade ex é a **altura de uma determinada fonte e a altura do caractere "x" em
 
 
 ## Layout Estático
-<br><br>
+<br>
 
 #### `px`
 Unidade de medida estática, **não herdando do seu elemento pai**. <br>
